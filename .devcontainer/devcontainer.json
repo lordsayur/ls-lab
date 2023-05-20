@@ -1,0 +1,15 @@
+// See https://containers.dev/implementors/json_reference/ for configuration reference
+{
+    "name": "ls-lab project",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "onCreateCommand": "sh setup.sh",
+    "remoteUser": "node",
+    "customizations": {
+      "vscode": {
+        "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+      }
+    }
+  }
+  
